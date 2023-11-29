@@ -44,7 +44,7 @@ except URLError as e:
       streamlit.stop()
 ################################################
 
-#streamlit.stop()
+
 
 def get_fruit_load_list():
 	with my_cnx.cursor() as my_cur: 	
@@ -65,6 +65,7 @@ if streamlit.button('Selecciona Fruta de la lista'):
 #streamlit.text("The fruit load list contains:")
 #streamlit.dataframe(my_data_rows)
 
+streamlit.stop()
 
 #fruit_choice2 = streamlit.text_input('What fruit would you like to add?','jackfruit')
 #streamlit.write('Gracias por añadir otra fruta ', fruit_choice2)
