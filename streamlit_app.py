@@ -66,7 +66,7 @@ def insert_row_snowflake(new_fruit):
 add_my_fruit = streamlit.text_input("¿que fruta quieres añadir?")
 if streamlit.button('Añade una fruta de la lista'):
 	back_from_function = insert_row_snowflake(add_my_fruit)
-	streamlit.txt(back_from_function)
+	streamlit.text(back_from_function)
 
 
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
